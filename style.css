@@ -5,6 +5,6 @@ body {
   text-align: center;
 }
 .top_container{
-  background-image: image1.jpeg;
+  background-image: url("image1.jpg");
   
 }
