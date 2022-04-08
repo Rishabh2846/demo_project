@@ -6,5 +6,29 @@ body {
 }
 .top_container{
   background-image: url("image1.jpg");
-  
+ }
+
+    
+    .bg {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1519750783826-e2420f4d687f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJpZ2h0JTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bottom-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.middle-container{
+font-family: 'Montserrat', sans-serif;
+font-size : 2rem;
+line-height : 1.5;
+font-weight : 900;
 }
