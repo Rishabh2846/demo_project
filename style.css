@@ -42,3 +42,16 @@ font-size : 2rem;
 line-height : 1.5;
 font-weight : 900;
 }
+
+.logos {
+    padding : 10px 10px 20ps 20px;
+    background: #fff;
+}
+
+.logos.hover {
+    padding:5px 5px 5px 5px;
+}
+
+.container1 {
+     background: #fff;
+}
