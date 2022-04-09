@@ -43,6 +43,15 @@ line-height : 1.5;
 font-weight : 900;
 }
 
+#carouselExampleSlidesOnly {
+    height: 300px;
+    padding :10% 10% 20% 20% ;
+    
+}
+
+.last-div{
+    padding: 30% 30% 40% 40%;
+}
 .logos {
     padding : 10px 10px 20ps 20px;
     background: #fff;
