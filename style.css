@@ -1,234 +1,394 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background: #585c68;
-  font-size: 14px;
-  line-height: 22px;
-  color: #555555;
-}
-
-.bold {
-  font-weight: 700;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.semi-bold {
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.resume {
-  width: 800px;
-  height: auto;
-  display: flex;
-  margin: 50px auto;
-}
-
-.resume .resume_left {
-  width: 280px;
-  background: #0bb5f4;
-}
-
-.resume .resume_left .resume_profile {
-  width: 100%;
-  height: 280px;
-}
-
-.resume .resume_left .resume_profile img {
-  width: 100%;
-  height: 100%;
-}
-
-.resume .resume_left .resume_content {
-  padding: 0 25px;
-}
-
-.resume .title {
-  margin-bottom: 20px;
-}
-
-.resume .resume_left .bold {
-  color: #fff;
-}
-
-.resume .resume_left .regular {
-  color: #b1eaff;
-}
-
-.resume .resume_item {
-  padding: 25px 0;
-  border-bottom: 2px solid #b1eaff;
-}
-
-.resume .resume_left .resume_item:last-child,
-.resume .resume_right .resume_item:last-child {
-  border-bottom: 0px;
-}
-
-.resume .resume_left ul li {
-  display: flex;
-  margin-bottom: 10px;
-  align-items: center;
-}
-
-.resume .resume_left ul li:last-child {
-  margin-bottom: 0;
-}
-
-.resume .resume_left ul li .icon {
-  width: 35px;
-  height: 35px;
-  background: #fff;
-  color: #0bb5f4;
-  border-radius: 50%;
-  margin-right: 15px;
-  font-size: 16px;
+*{
+  font-family:Century Gothic;
+  vertical-align: top;
   position: relative;
+  background:#dcdcdc;
+  
+}
+html,body{
+  width: 100%; height: 150%;
+  padding: 0px; margin: 0px;
+  background-color:#5d5c61;
 }
 
-.resume .icon i,
-.resume .resume_right .resume_hobby ul li i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.resume{
+  border:solid 0px;
+  width: 1200px; height: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  box-shadow: 10px 20px 30px -5px rgba(0,0,0,0.3);
+  
 }
 
-.resume .resume_left ul li .data {
-  color: #b1eaff;
+.top{
+  border:solid 0px;
+  width: 1200px; height: 150px;
+  box-sizing:border-box
+  border: solid 4px;
+  background: ;
+  text-align:center;
+  color:#737373;
 }
 
-.resume .resume_left .resume_skills ul li {
-  display: flex;
-  margin-bottom: 10px;
-  color: #b1eaff;
-  justify-content: space-between;
-  align-items: center;
+.top h1{
+  font-size:40pt;
+  letter-spacing:10px;
 }
 
-.resume .resume_left .resume_skills ul li .skill_name {
-  width: 25%;
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  top:70px;
 }
 
-.resume .resume_left .resume_skills ul li .skill_progress {
-  width: 60%;
-  margin: 0 5px;
-  height: 5px;
-  background: #009fd9;
-  position: relative;
+.Education{
+  letter-spacing:1px;
+  line-height:10px;
+  font-size:14pt
+  
+  
+}
+.Education h6{
+  top:-18px;
+  letter-spacing:2.5px;
 }
 
-.resume .resume_left .resume_skills ul li .skill_per {
-  width: 15%;
+.right,.left{
+  display: inline-block;
+  box-sizing:border-box;
+
 }
 
-.resume .resume_left .resume_skills ul li .skill_progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background: #fff;
+.right{
+  left:6%;
+  top:80px;
 }
 
-.resume .resume_left .resume_social .semi-bold {
-  color: #fff;
-  margin-bottom: 3px;
+.contact{
+  top:-5.5%;
+  line-height:10px;   
+}
+.contact h5{
+  line-height:5px;
+  
+}
+.contact h4{
+  left:-8%
 }
 
-.resume .resume_right {
-  width: 520px;
-  background: #fff;
-  padding: 25px;
+
+
+.left{
+  border:solid 0px;
+  height:1180px;
+  width: 40%;
+  background: ;
+  line-height:20px;
+  text-align:center;
+  font-family: Helvetica;
+  left:40px;
+  
 }
 
-.resume .resume_right .bold {
-  color: #0bb5f4;
+.aboutme span {
+  text-align:left;
+  left:85px;
+  font-size:14pt;
+  line-height:26px;
+  letter-spacing:1px
 }
 
-.resume .resume_right .resume_work ul,
-.resume .resume_right .resume_education ul {
-  padding-left: 40px;
-  overflow: hidden;
-}
-
-.resume .resume_right ul li {
-  position: relative;
-}
-
-.resume .resume_right ul li .date {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.resume .resume_right ul li .info {
-  margin-bottom: 20px;
-}
-
-.resume .resume_right ul li:last-child .info {
-  margin-bottom: 0;
-}
-
-.resume .resume_right .resume_work ul li:before,
-.resume .resume_right .resume_education ul li:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -25px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: 2px solid #0bb5f4;
-}
-
-.resume .resume_right .resume_work ul li:after,
-.resume .resume_right .resume_education ul li:after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: -21px;
-  width: 2px;
-  height: 115px;
-  background: #0bb5f4;
-}
-
-.resume .resume_right .resume_hobby ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.resume .resume_right .resume_hobby ul li {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #0bb5f4;
-  border-radius: 50%;
-  position: relative;
-  color: #0bb5f4;
-}
-
-.resume .resume_right .resume_hobby ul li i {
-  font-size: 30px;
-}
-
-.resume .resume_right .resume_hobby ul li:before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  right: -52px;
+.ps,.ai,.id,.ae,.pr,.lr{
+  font-weight:600;
+  border-radius:80%;
+  height: 40px;
   width: 50px;
-  height: 2px;
-  background: #0bb5f4;
+  text-align:center;
+  padding-top: 12.5px;
+  margin:12px; 
+  font-size: 16pt; 
+  display: inline-block;
+  left:1px;
+  }
+
+.ps{
+  color:#eee;
+  border: solid 4px #0099cc;
+  background-color:#0099cc;  
+  }
+.ai{
+  color: #eee;
+  border: solid 4px #ff9933;
+  background-color:#ff9933;
+  }
+.id{
+   color: #eee;
+   border: solid 4px #a9355c;
+   background-color: #a9355c;
+   left:150px;
+   }
+.ae{
+   color: #eee;
+   border: solid 4px #874e93;
+   background-color: #874e93;
+   }
+.pr{
+   color:  #eee;
+   border: solid 4px  #924a8a;
+   background-color: #924a8a; 
+   left:150px;
+   }
+.lr{
+   color:  #eee;
+   border: solid 4px  #87b8c7;
+   background-color: #87b8c7; 
+   left:150px;
+   }
+.languages h3{
+  text-align:left;
+  left:60px;
+  font-size:14pt;
 }
 
-.resume .resume_right .resume_hobby ul li:last-child:before {
-  display: none;
+.computer{
+  
+}
+
+.p1,.p2,.p3,.p4,.p5{
+ border: solid 0px #0099cc;
+ height:15px;
+ width:15px;
+ border-radius:100%;
+ background:	 #0099cc;
+ float:left;
+ position:absolute;
+ top:74.9%;
+ left:16%;
+ margin:5px;
+}
+.p2{
+ position:absolute;
+ left:22%;
+}
+.p3{
+ position:absolute;
+ left:28%;
+}
+
+.p4{
+ position:absolute;
+ left:34%;
+}
+.p5{
+ position:absolute;
+ left:40%;
+}
+.a1,.a2,.a3,.a4,.a5{
+ border: solid 0px ;
+ height:15px;
+ width:15px;
+ border-radius:100%;
+ background: #ff9933;
+ float:left;
+ position:absolute;
+ top:83.9%;
+ left:16%;
+ margin:5px;
+}
+.a2{
+ position:absolute;
+ left:22%;
+}
+.a3{
+ position:absolute;
+ left:28%;
+}
+
+.a4{
+ position:absolute;
+ left:34%;
+}
+.a5{
+ position:absolute;
+ left:40%;
+}
+
+.l1,.l2,.l3,.l4,.l5{
+ border: solid 0px ;
+ height:15px;
+ width:15px;
+ border-radius:100%;
+ background:#87b8c7;
+ float:left;
+ position:absolute;
+ top:74.9%;
+ left:65%;
+ margin:5px;
+}
+.l2{
+ position:absolute;
+ left:71%;
+}
+.l3{
+ position:absolute;
+ left:77%;
+}
+
+.l4{
+ position:absolute;
+ left:83%;
+}
+.l5{
+ position:absolute;
+ left:89%;
+}
+
+.e1,.e2,.e3,.e4,.e5{
+ border: solid 1px #874e93;
+ height:15px;
+ width:15px;
+ border-radius:100%;
+ float:left;
+ position:absolute;
+ top:92%;
+ left:16%;
+ margin:5px;
+}
+.e1{
+  background:#874e93;
+}
+.e2{
+ background:#874e93;
+ position:absolute;
+ top:92%;
+ left:22%;
+}
+.e3{
+  background:#874e93;
+  position:absolute;
+  left:28%;
+}
+
+.e4{
+ position:absolute;
+ left:34%;
+}
+.e5{
+ position:absolute;
+ left:40%;
+}
+.r1,.r2,.r3,.r4,.r5{
+ border: solid 1px #924a8a;
+ height:15px;
+ width:15px;
+ border-radius:100%;
+ float:left;
+ position:absolute;
+ top:92%;
+ left:65%;
+ margin:5px;
+}
+.r1{
+  background:#924a8a;
+}
+.r2{
+ background:#924a8a;
+ position:absolute;
+ left:71%;
+}
+.r3{
+  background:#924a8a;
+  position:absolute;
+  left:77%;
+}
+
+.r4{
+ position:absolute;
+ left:83%;
+}
+.r5{
+ position:absolute;
+ left:89%;
+}
+.d1,.d2,.d3,.d4,.d5{
+ border: solid 0px;
+ height:15px;
+ width:15px;
+ border-radius:100%;
+ background:#a9355c;
+ float:left;
+ position:absolute;
+ top:83.5%;
+ left:65%;
+ margin:5px;
+}
+.d2{
+ position:absolute;
+ left:71%;
+}
+.d3{
+ position:absolute;
+ left:77%;
+}
+
+.d4{
+ position:absolute;
+ left:83%;
+}
+.d5{
+ position:absolute;
+ left:89%;
+}
+.ch{
+  border:solid 0.5px #ff6666 ;
+  border-radius:10%;
+  height:15px;
+  width:200px;
+  top:-115px;
+  left:35%;
+  background-color: #ff6666;
+  
+}
+.en{
+  
+  border:solid 1px ;
+  border-radius:10%;
+  height:15px;
+  width:200px;
+  top:-95px;
+  left:35%;
+
+}
+
+.en2{
+  
+  border:solid 0.1px #ff6666 ;
+  border-radius:10%;
+  height:15px;
+  width:135px;
+  top:-112px;
+  left:35.1%;
+  background-color:  #ff6666;
+}
+
+.fr{
+  
+  border:solid 1px  ;
+  border-radius:10%;
+  height:15px;
+  width:200px;
+  top:-90px;
+  left:35%;
+}
+.fr2{
+  
+  border:solid 0.1px #ff6666 ;
+  border-radius:10%;
+  height:15px;
+  width:75px;
+  top:-107.5px;
+  left:35.1%;
+  background-color: #ff6666;
 }
