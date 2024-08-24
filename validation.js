@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         function showSuccessMessageAndNavigate() {
             // Show the success message
             var messageContainer = document.getElementById('message-container');
-            messageContainer.style.display = 'success';
+            messageContainer.style.display = 'block';
             
             // Wait for a short time before navigating
             setTimeout(function() {
