@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('loginForm');
 function showSuccessMessageAndNavigate() {
             // Show the success message
-            var messageContainer = document.getElementById('message-container');
-            messageContainer.style.display = 'block';
-            
+           // var messageContainer = document.getElementById('message-container');
+           // messageContainer.style.display = 'block';
+            alert('Operation completed successfully!');
             // Wait for a short time before navigating
             setTimeout(function() {
                 window.location.href = 'Page1.html'; // Navigate to the next page
@@ -29,7 +29,7 @@ function showSuccessMessageAndNavigate() {
             isValid = false;
         } else  {
         document.getElementById('usernameError').textContent = 'Login successfully';
-            isValid= false;
+            isValid= true;
         }
 
         // Validate password
@@ -41,7 +41,7 @@ function showSuccessMessageAndNavigate() {
             isValid = false;
         } else {
         document.getElementById('passwordError').textContent = 'Password correct';
-            isValid = false;
+            isValid = true;
         }
 
         if (!isValid) {
