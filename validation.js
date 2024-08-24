@@ -39,13 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault(); // Prevent form submission if validation fails
         } else {
 function showSuccessMessageAndNavigate() {
-           var messageContainer = document.getElementById('message-container');
-            messageContainer.style.display = 'block';
-            
+          // var messageContainer = document.getElementById('message-container');
+           // messageContainer.style.display = 'block';
+            alert("success");
+    window.location.pathname = '/Page1.html'; // Navigate to the next page
             // Wait for a short time before navigating
-            setTimeout(function() {
-                window.location.pathname = '/Page1.html'; // Navigate to the next page
-            }, 2000); // Display message for 2 seconds before navigating
+           
 }
         
     
