@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (username === '') {
             document.getElementById('usernameError').textContent = 'Username is required';
             isValid = false;
+        } else  {
+        document.getElementById('usernameError').textContent = 'Login successfully';
+            isValid= true;
         }
 
         // Validate password
@@ -27,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (password.length < 6) {
             document.getElementById('passwordError').textContent = 'Password must be at least 6 characters long';
             isValid = false;
+        } else {
+        document.getElementById('passwordError').textContent = 'Password correct';
+            isValid = true;
         }
 
         if (!isValid) {
