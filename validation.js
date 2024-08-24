@@ -42,7 +42,7 @@ function showSuccessMessageAndNavigate() {
           // var messageContainer = document.getElementById('message-container');
            // messageContainer.style.display = 'block';
             alert("success");
-    window.location.pathname = '/Page1.html'; // Navigate to the next page
+    window.location.href = '/Page1.html'; // Navigate to the next page
             // Wait for a short time before navigating
            
 }
