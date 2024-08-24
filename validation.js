@@ -37,15 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (!isValid) {
             event.preventDefault(); // Prevent form submission if validation fails
-        } else {
-function showSuccessMessageAndNavigate() {
-          // var messageContainer = document.getElementById('message-container');
-           // messageContainer.style.display = 'block';
-            alert("success");
-    window.location.href = '/Page1.html'; // Navigate to the next page
-            // Wait for a short time before navigating
-           
-}
+        } 
         
     
     });
