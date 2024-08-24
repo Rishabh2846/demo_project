@@ -31,7 +31,7 @@
         }
         .login-container input[type="text"],
         .login-container input[type="password"] {
-            width: 90%;
+            width: 100%;
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ddd;
@@ -54,17 +54,24 @@
             text-align: center;
             margin-top: 10px;
         }
+        .error {
+            color: red;
+            margin-top: -15px;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="/login" method="post">
+        <form id="loginForm">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
+            <div id="usernameError" class="error"></div>
             
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
+            <div id="passwordError" class="error"></div>
             
             <input type="submit" value="Login">
         </form>
@@ -72,5 +79,8 @@
             <p>Don't have an account? <a href="/register">Register here</a></p>
         </div>
     </div>
+
+    <!-- Link to the external JavaScript file -->
+    
 </body>
 </html>
