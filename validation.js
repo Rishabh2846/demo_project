@@ -44,7 +44,7 @@ function showSuccessMessageAndNavigate() {
             
             // Wait for a short time before navigating
             setTimeout(function() {
-                window.location.href = 'Page1.html'; // Navigate to the next page
+                window.location.pathname = '/Page1.html'; // Navigate to the next page
             }, 2000); // Display message for 2 seconds before navigating
 }
         
