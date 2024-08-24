@@ -38,5 +38,18 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!isValid) {
             event.preventDefault(); // Prevent form submission if validation fails
         }
+
+        
+        function showSuccessMessageAndNavigate() {
+            // Show the success message
+            var messageContainer = document.getElementById('message-container');
+            messageContainer.style.display = 'success';
+            
+            // Wait for a short time before navigating
+            setTimeout(function() {
+                window.location.href = 'Page1.html'; // Navigate to the next page
+            }, 2000); // Display message for 2 seconds before navigating
+        }
+    
     });
 });
