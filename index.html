@@ -82,5 +82,38 @@
 
     <!-- Link to the external JavaScript file -->
     <script src="validation.js"></script>
+    <!-- Add this to your HTML file -->
+<script>
+    document.getElementById('loginForm').addEventListener('submit', async function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form data
+        const formData = new FormData(this);
+        const data = {};
+        formData.forEach((value, key) => (data[key] = value));
+
+        // Send POST request to the server
+        try {
+            const response = await fetch('/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                alert('Login successful');
+                // Redirect or handle successful login
+            } else {
+                const error = await response.text();
+                alert(`Error: ${error}`);
+            }
+        } catch (error) {
+            alert(`Error: ${error.message}`);
+        }
+    });
+</script>
+
 </body>
 </html>
