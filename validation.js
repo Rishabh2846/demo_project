@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid = false;
         } else  {
         document.getElementById('usernameError').textContent = 'Login successfully';
-            isValid= true;
+            isValid= false;
         }
 
         // Validate password
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid = false;
         } else {
         document.getElementById('passwordError').textContent = 'Password correct';
-            isValid = true;
+            isValid = false;
         }
 
         if (!isValid) {
