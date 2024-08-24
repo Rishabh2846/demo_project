@@ -65,7 +65,7 @@
     <div class="login-container">
         <h2>Login</h2>
         
-        <form id="loginForm">
+        <form id="loginForm" method="get" action="Page1.html">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
             <div id="usernameError" class="error"></div>
@@ -74,7 +74,7 @@
             <input type="password" id="password" name="password" required>
             <div id="passwordError" class="error"></div>
             
-            <button type="submit" value="Login" onclick="showSuccessMessageAndNavigate()">Submit</button>
+            <button type="submit" value="Login">Submit</button>
             
         </form>
         <div class="message">
