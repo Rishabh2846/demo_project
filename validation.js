@@ -2,16 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('loginForm');
-function showSuccessMessageAndNavigate() {
-            // Show the success message
-           // var messageContainer = document.getElementById('message-container');
-           // messageContainer.style.display = 'block';
-            alert('Operation completed successfully!');
-            // Wait for a short time before navigating
-            setTimeout(function() {
-                window.location.href = 'Page1.html'; // Navigate to the next page
-            }, 2000); // Display message for 2 seconds before navigating
-        }
+
     form.addEventListener('submit', function(event) {
         let isValid = true;
 
@@ -47,7 +38,16 @@ function showSuccessMessageAndNavigate() {
         if (!isValid) {
             event.preventDefault(); // Prevent form submission if validation fails
         }
-
+function showSuccessMessageAndNavigate() {
+            // Show the success message
+           // var messageContainer = document.getElementById('message-container');
+           // messageContainer.style.display = 'block';
+            alert('Operation completed successfully!');
+            // Wait for a short time before navigating
+            setTimeout(function() {
+                window.location.href = 'Page1.html'; // Navigate to the next page
+            }, 2000); // Display message for 2 seconds before navigating
+        }
         
         
     
